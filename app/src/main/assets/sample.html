@@ -1,0 +1,31 @@
+<html>
+ <head>
+   <title>
+       Sample Login form
+   </title>
+ </head>
+ <body>
+
+    <h4 align="center">Login Here</h4>
+
+    <hr/>
+   <pre>
+       <form align="center" action="" method="post">
+       <input type="text" id="user_email" name="email" placeholder="Enter email" style="height:40px;font-size:14pt;"/>
+
+       <input type="password" id="user_password" name="password" placeholder="Enter password" style="height:40px;font-size:14pt;"/>
+
+       <input type="submit" value="Login" onclick="handleSubmitClick()" style="height:30px;font-size:14pt; color:blue"/>
+   </form>
+   </pre>
+    <hr/>
+
+    <script>
+        function handleSubmitClick(){
+            var email = document.getElementById("user_email").value;
+            var password = document.getElementById("user_password").value;
+            Android.formData(email, password);
+        }
+     </script>
+ </body>
+</html>
